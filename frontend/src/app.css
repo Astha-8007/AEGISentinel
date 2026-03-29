@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  background: #0a0f1c;
+  font-family: "Courier New", monospace;
+  color: #00ffcc;
+}
+
+.app {
+  text-align: center;
+}
+
+h1 {
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+.banner {
+  background: red;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  animation: blink 1s infinite;
+}
+.charts {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+}
+
+.chart-box {
+  width: 45%;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid #00ffcc;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid #00ffcc;
+}
+
+.safe { border-color: #00ffcc; }
+.warning { border-color: yellow; }
+.attack { border-color: orange; }
+.danger {
+  border-color: red;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0.5; }
+}
